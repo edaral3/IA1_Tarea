@@ -63,7 +63,12 @@ function validate() {
 }
 
 getStates = () => {
-	return end ? "Todos los Estados Fueron visitados 2 veces <br>" : "" +
+	var concat = ""
+	if(end){
+		concat = "Todos los Estados Fueron visitados 2 veces <br>"
+	}
+
+	return concat+
 		"Estados Visitados <br>" +
 		"Estdo1: " + estado1 + "</br>" +
 		"Estdo2: " + estado2 + "<br>" +
